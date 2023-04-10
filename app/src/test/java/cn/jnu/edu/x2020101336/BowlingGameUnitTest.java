@@ -41,14 +41,19 @@ public class BowlingGameUnitTest {
         assertEquals(15, game.score());
     }
 
+    private void roll_spare() {
+        game.roll(7);
+        game.roll(3);
+    }
+
     @Test
     public void third_test()
     {
-        game.roll(7);
-        game.roll(3);
+        roll_spare();
         game.roll(4);
         roll_second_test(11);
-        assertEquals(32, game.score());
+        assertEquals(33, game.score());
     }
+
 
 }
