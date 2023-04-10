@@ -18,4 +18,14 @@ public class BowlingGameUnitTest {
             game.roll(4);
         assertEquals(4,game.score());
     }
+
+    @Test
+    public void second_test()
+    {
+        BowlingGame game = new BowlingGame();
+        for(int i = 1; i < 11; i++)
+            if(i % 2 == 0) game.roll(2);
+            else game.roll(1);
+        assertEquals(15,game.score());
+    }
 }
