@@ -11,5 +11,11 @@ import static org.junit.Assert.*;
  */
 public class BowlingGameUnitTest {
     @Test
-    public void addition_isCorrect(){ assertEquals(4, 2 + 2);}
+    public void first_test()
+    {
+        BowlingGame game = new BowlingGame();
+        for(int i = 1; i < 11; i++)
+            game.roll(4);
+        assertEquals(4,game.score());
+    }
 }
