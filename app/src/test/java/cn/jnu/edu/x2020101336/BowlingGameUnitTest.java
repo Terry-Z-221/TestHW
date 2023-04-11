@@ -74,7 +74,6 @@ public class BowlingGameUnitTest {
             if(i % 2 == 0) game.roll(6);
             else game.roll(4);
         }
-
         assertEquals(140,game.score());
     }
 
