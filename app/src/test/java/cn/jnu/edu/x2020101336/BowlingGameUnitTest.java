@@ -55,5 +55,14 @@ public class BowlingGameUnitTest {
         assertEquals(33, game.score());
     }
 
-
+    @Test
+    public void fourth_test()
+    {
+        game.roll(10); // strike
+        roll_spare();
+//        game.roll(7);
+//        game.roll(3);
+        game.roll(8);
+        assertEquals(46, game.score());
+    }
 }
